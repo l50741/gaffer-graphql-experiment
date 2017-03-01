@@ -1,0 +1,46 @@
+@import '~@angular/material/core/theming/all-theme';
+
+@include md-core();
+
+$primary: md-palette($md-light-blue);
+$accent:  md-palette($md-lime, A200, A100, A400);
+$warn:    md-palette($md-red);
+
+$grey:  md-palette($md-grey);
+
+$theme: md-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
+.mdTabs > * > .tabs {
+  background-color: md-color($primary, 700) !important;
+  color: md-color($primary, default-contrast) !important;
+}
+
+.mdTabs > * > .tabs li a{
+  color: md-color($primary, default-contrast) !important;
+}
+
+md-ink-bar, .indicator {
+  background-color: md-color($accent, A400) !important;
+  height: 4px !important;
+}
+
+.alt-background {
+  background-color: md-color($grey, 200);
+  overflow: visible;
+}
+
+.card-header {
+  background-color: md-color($primary, 800);
+}
+
+.content-card-header {
+  background-color: md-color($primary, 800);
+}
+
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }

@@ -1,0 +1,11 @@
+<h1 md-dialog-title>Add Seed</h1>
+<div md-dialog-content>
+  <div class="input-field" fxFlex>
+    <input class="form-control" type="text" name="Seed Name" [(ngModel)]="name">
+    <label>Seed Name</label>
+  </div>
+</div>
+<div md-dialog-actions>
+  <button md-button (click)="dialogRef.close()">Cancel</button>
+  <button md-button (click)="dialogRef.close(name)" color="primary" [disabled]="!name || name.length === 0">Add</button>
+</div>

@@ -1,0 +1,31 @@
+<div fxLayout="column" style="height: 100%">
+  <md-toolbar color="primary">
+    <button md-icon-button mdTooltip="menu" aria-label="menu" class="icon-button-spacer" (click)="sidenav.toggle()">
+      <md-icon class="md-16 header-icon">menu</md-icon>
+    </button>
+    <span>Gaffer UI</span>
+    <span class="header-spacer"></span>
+    <button md-icon-button mdTooltip="edit" aria-label="edit" class="icon-button-spacer">
+      <md-icon class="md-16 header-icon">more_vert</md-icon>
+    </button>
+  </md-toolbar>
+  <md-sidenav-container class="side-nav-container">
+    <md-sidenav #sidenav mode="side" opened="true" class="side-nav-main">
+      <ul style="margin: 0;">
+        <li (click)="load('explore')" class="side-menu-link" fxLayout="row">
+          <md-icon class="side-nav-icon">explore</md-icon>
+          <h3 class="side-nav-text">Explore</h3>
+        </li>
+        <li (click)="load('visualisation')" class="side-menu-link" fxLayout="row">
+          <md-icon class="side-nav-icon">show_chart</md-icon>
+          <h3 class="side-nav-text">Visualisation</h3>
+        </li>
+        <li (click)="load('dashboard')" class="side-menu-link" fxLayout="row">
+          <md-icon class="side-nav-icon">dashboard</md-icon>
+          <h3 class="side-nav-text">Dashboard</h3>
+        </li>
+      </ul>
+    </md-sidenav>
+    <router-outlet></router-outlet>
+  </md-sidenav-container>
+</div>

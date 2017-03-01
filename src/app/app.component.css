@@ -1,0 +1,36 @@
+.header-spacer {
+  flex: 1 1 auto;
+}
+
+.icon-button-spacer {
+    margin: 0 15px;
+}
+
+.side-nav-icon {
+    margin-right: 10px;
+    font-size: 12pt;
+    height: 15px;
+}
+
+.side-nav-text {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.side-nav-main {
+    width: 250px;
+}
+
+.side-menu-link {
+    cursor: pointer;
+    cursor: hand;
+    padding: 15px;
+}
+
+.side-menu-link:hover {
+    background-color: #eee;
+}
+
+.main-content {
+    background-color: #eee;
+}

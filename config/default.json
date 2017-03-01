@@ -1,0 +1,19 @@
+{
+  "server": {
+    "port": 3001
+  },
+  "graphQL": {
+    "types": {
+      "counts.freqmap": {
+        "type": "custom",
+        "name": "GraphQLFreqMap",
+        "fields": [
+          {
+            "name": "HGVR3",
+            "type": "GraphQLString"
+          }
+        ]
+      }
+    }
+  }
+}
